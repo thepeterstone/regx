@@ -2,16 +2,27 @@
 import re
 
 class ReBuilder:
-  rule = None
+  atoms = []
 
   def addPattern(self, pattern):
-    if (self.rule == None):
-      self.rule = re.compile(pattern)
-      return self
-    if (self.rule.match(pattern)):
-      return self
-    self.rule = re.compile(self.rule.pattern + '|' + pattern)
+    if self.atoms == []:
+      self.atoms = self.split(pattern)
+    else:
+      if self.match(pattern):
+        self.atoms = self.merge(self.atoms, self.split(pattern))
     return self
+
+  def rule(self):
+    return re.compile(self.atoms.join(''))
+
+  def split(self, pattern):
+    return pattern.split('')
+
+  def merge(self, orig, addenda):
+    return [orig, addenda]
+  
+  def match(self, test):
+    return self.rule().match(test)
 
 
 
