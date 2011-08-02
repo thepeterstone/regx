@@ -8,18 +8,18 @@ class ReBuilder:
     if self.atoms == []:
       self.atoms = self.split(pattern)
     else:
-      if self.match(pattern):
+      if not self.match(pattern):
         self.atoms = self.merge(self.atoms, self.split(pattern))
     return self
 
   def rule(self):
-    return re.compile(self.atoms.join(''))
+    return re.compile('|'.join(self.atoms))
 
   def split(self, pattern):
-    return pattern.split('')
+    return list(pattern)
 
   def merge(self, orig, addenda):
-    return [orig, addenda]
+    return orig + addenda
   
   def match(self, test):
     return self.rule().match(test)
