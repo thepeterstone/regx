@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>RegX - Regular Expression generator</title>
-  <link rel="stylesheet" href="http://static.terst.org/styles/layout.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>RegX - Regular Expression generator</title>
+    <link rel="stylesheet" href="http://static.terst.org/styles/layout.css">
+  </head>
 
-<body>
-  <h1 id="title">RegX - Regular Expression generator</h1>
+  <body>
+    <h1 id="title">RegX - Regular Expression generator</h1>
+    <p><code>regx</code> reads lines of input and attempts to create a compact regular expression that
+      will match all similar lines. </p>
+
+    <p>For instance, given the input</p>
+    <blockquote>
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+    </blockquote>
+    <p><code>regx</code> will interpret this as <code>\d</code> and match those lines as well as <code>5</code>, <code>6</code>, etc.</p>
+
+    <h2>Status</h2>
+    <p><strong><code>regx</code> is in development and is in no way ready to be used for anything
+        serious.</strong></p>
+
+    <h2>License</h2>
+    <p>This work is <a href="http://www.fsf.org/about/">free software</a>; you can redistribute it and/or modify it under the
+      terms of the <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a> 
+
+      as published by the Free Software Foundation; either version 3 of the License, or
+      any later version. This work is distributed in the hope that it will be useful, <strong>but
+        without any warranty</strong>; without even the implied warranty of <strong>merchantability</strong> or
+      <strong>fitness for a particular purpose</strong>.</p>
 
 
 
 
+    <img id="emblem" src="http://static.terst.org/images/coyote.png" alt="">
+    <footer>
+    <p>&copy; 2011 <a href="http://3rdpla.net">Peter Stone</a>.</p>
+    </footer>
+  </body>
 
-  <img id="emblem" src="http://static.terst.org/images/coyote.png" alt="">
-  <footer>
-  <p>&copy; 2011 <a href="http://3rdpla.net">Peter Stone</a>.</p>
-  </footer>
-</body>
-
-<script type="text/javascript" src="http://static.terst.org/scripts/vendor/jquery.js"></script>
-<script type="text/javascript" src="http://static.terst.org/scripts/ui-common.js"></script>
+  <script type="text/javascript" src="http://static.terst.org/scripts/vendor/jquery.js"></script>
+  <script type="text/javascript" src="http://static.terst.org/scripts/ui-common.js"></script>
 </html>
