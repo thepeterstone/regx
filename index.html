@@ -1,47 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
   <head>
     <meta charset="utf-8">
-    <title>RegX - Regular Expression generator</title>
-    <link rel="stylesheet" href="http://static.terst.org/styles/layout.css">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Regx by thepeterstone</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
-    <h1 id="title">RegX - Regular Expression generator</h1>
-    <p><code>regx</code> reads lines of input and attempts to create a compact regular expression that
-      will match all similar lines. </p>
+    <div class="wrapper">
+      <header>
+        <h1>Regx</h1>
+        <p>Regular Expression Generator</p>
+        <p class="view"><a href="https://github.com/thepeterstone/regx">View the Project on GitHub <small>thepeterstone/regx</small></a></p>
+        <ul>
+          <li><a href="https://github.com/thepeterstone/regx/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/thepeterstone/regx/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/thepeterstone/regx">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>regx - Regular Expression Generator</h1>
 
-    <p>For instance, given the input</p>
-    <blockquote>
-      <p>1</p>
-      <p>2</p>
-      <p>3</p>
-      <p>4</p>
-    </blockquote>
-    <p><code>regx</code> will interpret this as <code>\d</code> and match those lines as well as <code>5</code>, <code>6</code>, etc.</p>
+<p><code>regx</code> reads lines of input and attempts to create a compact regular expression that
+will match all similar lines. </p>
 
-    <h2>Status</h2>
-    <p><strong><code>regx</code> is in development and is in no way ready to be used for anything
-        serious.</strong></p>
+<p>For instance, given the input</p>
 
-    <h2>License</h2>
-    <p>This work is <a href="http://www.fsf.org/about/">free software</a>; you can redistribute it and/or modify it under the
-      terms of the <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a> 
+<pre><code>1
+2
+3
+4
+</code></pre>
 
-      as published by the Free Software Foundation; either version 3 of the License, or
-      any later version. This work is distributed in the hope that it will be useful, <strong>but
-        without any warranty</strong>; without even the implied warranty of <strong>merchantability</strong> or
-      <strong>fitness for a particular purpose</strong>.</p>
+<p><code>regx</code> will interpret this as <code>\d</code> and match those lines as well as <code>5</code>, <code>6</code>, etc.</p>
 
+<h2>Status</h2>
 
+<p><strong><code>regx</code> is in development and is in no way ready to be used for anything
+serious.</strong></p>
 
+<h2>License</h2>
 
-    <img id="emblem" src="http://static.terst.org/images/coyote.png" alt="">
-    <footer>
-    <p>&copy; 2011 <a href="http://3rdpla.net">Peter Stone</a>.</p>
-    </footer>
+<p>This work is <a href="http://www.fsf.org/about/">free software</a>; you can redistribute it and/or modify it under the
+terms of the <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a> 
+as published by the Free Software Foundation; either version 3 of the License, or
+any later version. This work is distributed in the hope that it will be useful, <strong>but
+without any warranty</strong>; without even the implied warranty of <strong>merchantability</strong> or
+<strong>fitness for a particular purpose</strong>.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/thepeterstone">thepeterstone</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <img id="emblem" src="http://static.terst.org/images/coyote.png" alt="">
+      </footer>
+    </div>
+    <script type="text/javascript" src="http://static.terst.org/scripts/vendor/jquery.js"></script>
+    <script type="text/javascript" src="http://static.terst.org/scripts/ui-common.js"></script>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
   </body>
-
-  <script type="text/javascript" src="http://static.terst.org/scripts/vendor/jquery.js"></script>
-  <script type="text/javascript" src="http://static.terst.org/scripts/ui-common.js"></script>
 </html>
