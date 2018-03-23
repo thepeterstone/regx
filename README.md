@@ -1,5 +1,5 @@
 # regx - Regular Expression Generator
-[![build status][https://travis-ci.org/thepeterstone/regx.svg?branch=master][https://travis-ci.org/thepeterstone/regx]]
+[![build status](https://travis-ci.org/thepeterstone/regx.svg?branch=master)](https://travis-ci.org/thepeterstone/regx)
 
 `regx` reads lines of input and attempts to create a compact regular expression that
 will match all similar lines. 
