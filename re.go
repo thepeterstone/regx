@@ -32,7 +32,7 @@ func (e *Expression) AddLine(line string) {
 // String returns a printable form of the Expression
 func (e *Expression) String() string {
 	if e.pattern == nil {
-		return fmt.Sprintf("%+v", e)
+		return fmt.Sprintf("%+v", e.atoms)
 	}
 	return e.pattern.String()
 }
